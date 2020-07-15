@@ -1,0 +1,8 @@
+launch.json
+settings.json
+__pycache__
+.vscode
+.env
+tmp
+result.xml
+.DS_Store

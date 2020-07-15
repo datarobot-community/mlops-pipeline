@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "032621a9-cd69-4b71-a526-21f77ae09f46",
+		"name": "CICD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Test MLmodelAPI",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"feature\" : [[5.8, 4.0, 1.2, 0.2]]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://<YOUR_ENDPOINT>:8000/api",
+					"protocol": "http",
+					"host": [
+						"52",
+						"224",
+						"16",
+						"246"
+					],
+					"port": "8000",
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test MLmodelAPI Local",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"feature\" : [[5.8, 4.0, 1.2, 0.2]]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test DR MLmodelAPI",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"is_bad\": \"Yes\",\n    \"member_id\": \"M1236516\",\n    \"loan_status\": \"Charged Off\",\n    \"emp_title\": \"Aqua Sun Lawn and Landscaping\",\n    \"emp_length\": \"5 years\",\n    \"home_ownership\": \"RENT\",\n    \"annual_inc\": 50000,\n    \"pymnt_plan\": \"n\",\n    \"desc\": \"\",\n    \"zip_code\": \"282xx\",\n    \"addr_state\": \"NC\",\n    \"dti\": 7.99,\n    \"delinq_2yrs\": 1,\n    \"earliest_cr_line\": \"12/1/1998\",\n    \"inq_last_6mths\": 1,\n    \"mths_since_last_delinq\": 19,\n    \"mths_since_last_record\": \"NA\",\n    \"open_acc\": 3,\n    \"pub_rec\": 0,\n    \"revol_util\": 13.9,\n    \"total_acc\": 9,\n    \"initial_list_status\": \"FALSE\",\n    \"collections_12_mths_ex_med\": 0,\n    \"mths_since_last_major_derog\": \"NA\",\n    \"revol_util_percent\": \"14%\",\n    \"policy_code\": 1\n  },\n  {\n    \"is_bad\": \"No\",\n    \"member_id\": \"M0978861\",\n    \"loan_status\": \"Fully Paid\",\n    \"emp_title\": \"USDA/FMMA\",\n    \"emp_length\": \"9 years\",\n    \"home_ownership\": \"RENT\",\n    \"annual_inc\": 34200,\n    \"pymnt_plan\": \"n\",\n    \"desc\": \"\",\n    \"zip_code\": \"605xx\",\n    \"addr_state\": \"IL\",\n    \"dti\": 22.74,\n    \"delinq_2yrs\": 2,\n    \"earliest_cr_line\": \"11/1/1971\",\n    \"inq_last_6mths\": 2,\n    \"mths_since_last_delinq\": 14,\n    \"mths_since_last_record\": 45,\n    \"open_acc\": 10,\n    \"pub_rec\": 1,\n    \"revol_util\": 80.6,\n    \"total_acc\": 31,\n    \"initial_list_status\": \"FALSE\",\n    \"collections_12_mths_ex_med\": 0,\n    \"mths_since_last_major_derog\": \"NA\",\n    \"revol_util_percent\": \"81%\",\n    \"policy_code\": 1\n  }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://<YOUR_ENDPOINT>:8000/drapi",
+					"protocol": "http",
+					"host": [
+						"52",
+						"224",
+						"16",
+						"246"
+					],
+					"port": "8000",
+					"path": [
+						"drapi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test DR MLmodelAPI Local",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"is_bad\": \"Yes\",\n    \"member_id\": \"M1236516\",\n    \"loan_status\": \"Charged Off\",\n    \"emp_title\": \"Aqua Sun Lawn and Landscaping\",\n    \"emp_length\": \"5 years\",\n    \"home_ownership\": \"RENT\",\n    \"annual_inc\": 50000,\n    \"pymnt_plan\": \"n\",\n    \"desc\": \"\",\n    \"zip_code\": \"282xx\",\n    \"addr_state\": \"NC\",\n    \"dti\": 7.99,\n    \"delinq_2yrs\": 1,\n    \"earliest_cr_line\": \"12/1/1998\",\n    \"inq_last_6mths\": 1,\n    \"mths_since_last_delinq\": 19,\n    \"mths_since_last_record\": \"NA\",\n    \"open_acc\": 3,\n    \"pub_rec\": 0,\n    \"revol_util\": 13.9,\n    \"total_acc\": 9,\n    \"initial_list_status\": \"FALSE\",\n    \"collections_12_mths_ex_med\": 0,\n    \"mths_since_last_major_derog\": \"NA\",\n    \"revol_util_percent\": \"14%\",\n    \"policy_code\": 1\n  }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/drapi",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"drapi"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,8 @@
+flask
+flask_restful
+sklearn 
+pandas
+numpy
+python-dotenv
+datarobot
+pytest
