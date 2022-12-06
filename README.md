@@ -1,3 +1,5 @@
+**Please note:** The code in these repos is sourced from the DataRobot user community and is not owned or maintained by DataRobot, Inc. You may need to make edits or updates for this code to function properly in your environment.
+
 # DataRobot MLOps Jenkins Pipeline Example
 
 This is a simple example of a CI/CD pipeline with Jenkins and DataRobot MLOps.
